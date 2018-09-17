@@ -1,0 +1,99 @@
+#hangmanImg {
+  border: 4px black solid;
+  height: auto;
+  width: 500px;
+}
+
+#letters {
+  margin: 10px;
+}
+
+.letter {
+  border: 1px black solid;
+  background-color: grey;
+  margin: 0 2px 0 2px;
+  color: white;
+}
+
+.word {
+  background-color: skyblue;
+  border: 1px grey solid;
+  margin: 0 1px 0 1px;
+  color: black;
+}
+
+#startGame {
+  background-color: blue;
+}
+
+#startScreen {
+  background-color: orange;
+  border: 3px solid black;
+}
+
+.startScreenShown {
+  display: none;
+}
+
+.hideStartScreen {
+  display: none;
+}
+
+#word {
+  margin: 10px;
+}
+
+#gameOverImg {
+  width: 500px;
+  height: auto;
+}
+
+.wrongGuess {
+  background-color: red;
+  color: black;
+}
+
+.rightGuess {
+  background-color: green;
+  color: orange;
+}
+
+#gameOver {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  background-color: pink;
+  border: solid 3px red;
+}
+
+.gameOverHidden {
+  display: none;
+}
+
+#winScreen {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  background-color: skyblue;
+  border: solid 3px green;
+}
+
+.winScreenHidden {
+  display: none;
+}
+
+.winHidden {
+  display: none;
+}
+
+.hideStartButton {
+  display: none;
+}
+
+.hideWordBox {
+  display: none;
+}
+
+.js-textBoxWarning {
+  border: red solid 3px;
+}

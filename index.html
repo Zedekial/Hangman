@@ -1,0 +1,51 @@
+<html>
+<head>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Hangman Game!</title>
+</head>
+
+<body>
+  <div id="gameContainer" class="startScreenShown">
+    <h1>Hangman Game by David Garrood</h1>
+    <div id="hangmanImgContainer">
+      <img id="hangmanImg" src="img/hangmanStart.png"/>
+    </div>
+    <div id="letters">
+    </div>
+    <div>
+      <h3>The word: <span id="word"></span></h3>
+    </div>
+    <div>
+      <h3>Incorrect Guesses: <span id="incorrectGuesses">0</span></h3>
+      <h4 id="lettersGuessed"></h4>
+    </div>
+    <div>
+      <h3>Incorrect Guesses Remaining: <span id="remainingGuesses">10</span></h3>
+    </div>
+    <div>
+      <h3>Guesses so far: <span id="guessesSoFar">0</span></h3>
+    </div>
+  </div>
+    <div id="startScreen">
+      <h1>Welcome To Hangman, start the game and guess a word</h1>
+      <p>You will get 10 tries, if you guess wrong 10 times you will lose. If you guess the
+      word before you run out of tries you will win!</p>
+      <h2>Would you like to use a random word, or input your own?</h2>
+      <button id="randomButton">Random!</button><button id="inputOwnButton">Input my own!</button>
+      <input type="text" pattern="[A-Za-z]{10}" minlength="3" maxlength="12" id="wordBox" class="hideWordBox" size="30"></input>
+      <button id="startGame" class="hideStartButton">Start game with this word</button>
+    </div>
+    <div id="gameOver" class="gameOverHidden">
+      <img id="gameOverImg" src="img/hangManFinal.png" />
+      <h1>Better luck next time, you be dead...</h1>
+      <button id="playAgain">Play Again</button><button id="quit">Quit</button>
+    </div>
+    <div id="winScreen" class="winScreenHidden">
+      <img id="youWinImg" />
+      <h1>You win! You guessed the word "<span id="correctWord"></span>"</h1>
+      <button id="playAgainWinScreen">Play Again?</button>
+    </div>
+</body>
+
+</html>
